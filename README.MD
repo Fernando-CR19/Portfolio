@@ -32,7 +32,7 @@ Esse aplicativo tem como objetivo demostrar minhas habilidades como desenvolvedo
 ## Pré-requisitos:
 
 - [NodeJs](https://nodejs.org/pt) Versão LTS recomendada
-- [ExpoGo] instalado no seu dispositivo móvel (Android/iOS) para testar o app
+- ExpoGo instalado no seu dispositivo móvel (Android/iOS) para testar o app
 - [Git](https://git-scm.com/downloads) para clonar o repositório
 
 ## Executando no dispositivo:
