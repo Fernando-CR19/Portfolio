@@ -41,7 +41,7 @@ Esse aplicativo tem como objetivo demostrar minhas habilidades como desenvolvedo
     2. No Android: use o Expo Go para escanear.
     3. No iOS: abra a câmera nativa e escaneie o QR Code.
 
-## 🛠️ Tecnologias utilizadas
+## Tecnologias utilizadas
 
 - [React Native](https://reactnative.dev/)
 - [Expo](https://expo.dev/)
