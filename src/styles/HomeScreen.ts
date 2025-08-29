@@ -18,9 +18,31 @@ export default StyleSheet.create({
     margin: "auto",
     top: 10,
     marginBottom: 15,
+    borderWidth: 2,
+    borderColor: "gray",
+    borderRadius: 12,
   },
 
   AboutMe: {
+    marginBottom: 2,
+  },
+
+  AMTitle: {
+    fontSize: 20,
+    fontWeight: "bold",
+    marginBottom: 5,
+    marginTop: 5,
+  },
+
+  AMContent: {
+    fontSize: 16,
+    lineHeight: 24,
+    color: "#333333",
+    textAlign: "justify",
+    marginBottom: 20,
+  },
+
+  MyProjects: {
     borderWidth: 2,
   },
 });
