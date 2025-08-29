@@ -32,7 +32,7 @@ Esse aplicativo tem como objetivo demostrar minhas habilidades como desenvolvedo
 ## Pré-requisitos:
 
 - [NodeJs](https://nodejs.org/pt) Versão LTS recomendada
-- [ExpoGo] instalado no seu dispositivo móvel (Android/iOS) para testar o app
+- ExpoGo instalado no seu dispositivo móvel (Android/iOS) para testar o app
 - [Git](https://git-scm.com/downloads) para clonar o repositório
 
 ## Executando no dispositivo:
@@ -41,7 +41,7 @@ Esse aplicativo tem como objetivo demostrar minhas habilidades como desenvolvedo
     2. No Android: use o Expo Go para escanear.
     3. No iOS: abra a câmera nativa e escaneie o QR Code.
 
-## 🛠️ Tecnologias utilizadas
+## Tecnologias utilizadas
 
 - [React Native](https://reactnative.dev/)
 - [Expo](https://expo.dev/)
