@@ -22,7 +22,7 @@ export default function HomeScreen() {
 
   return (
     <SafeAreaProvider>
-      <SafeAreaView style={{ flex: 1 }}>
+      <SafeAreaView style={{ backgroundColor: "#020617", flex: 1 }}>
         <ScrollView>
           <Header />
           <View style={styles.Body}>

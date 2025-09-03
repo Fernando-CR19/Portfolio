@@ -11,36 +11,44 @@ export default StyleSheet.create({
 
   Title: {
     fontSize: 35,
+    color: "#f8fcfd",
   },
 
   Profile: {
     width: "99%",
+    height: 250,
     margin: "auto",
     top: 10,
     marginBottom: 15,
-    borderWidth: 2,
-    borderColor: "gray",
+    borderWidth: 3,
+    borderColor: "#06b6d4",
     borderRadius: 12,
+    shadowColor: "#06b6d4",
+    shadowOpacity: 0.3,
+    shadowRadius: 8,
   },
 
   AboutMe: {
-    marginBottom: 2,
+    marginTop: 15,
+    marginBottom: 15,
+    backgroundColor: "#1e293b",
+    padding: 20,
+    borderRadius: 12,
   },
 
   AMTitle: {
     fontSize: 20,
     fontWeight: "bold",
-    marginBottom: 5,
-    marginTop: 5,
+    marginBottom: 15,
+    color: "white",
   },
 
   AMContent: {
     fontSize: 16,
-    lineHeight: 24,
-    color: "#333333",
+    lineHeight: 26,
+    color: "#cbd5e1",
     textAlign: "justify",
-    textAlignVertical: 'center',
-    marginBottom: 20,
+    textAlignVertical: "center",
   },
 
   MyProjects: {},
