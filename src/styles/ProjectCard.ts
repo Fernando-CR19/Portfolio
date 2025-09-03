@@ -23,5 +23,7 @@ export default StyleSheet.create({
 
   cardDescription: {
     fontSize: 15,
+    textAlign: "justify",
+    textAlignVertical: "center",
   },
 });

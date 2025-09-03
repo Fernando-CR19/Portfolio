@@ -39,6 +39,7 @@ export default StyleSheet.create({
     lineHeight: 24,
     color: "#333333",
     textAlign: "justify",
+    textAlignVertical: 'center',
     marginBottom: 20,
   },
 
@@ -53,7 +54,9 @@ export default StyleSheet.create({
 
   MyProjectsCard: {},
 
-  MyAbilities: {},
+  MyAbilities: {
+    marginBottom: 20,
+  },
 
   AbilitiesTitle: {
     fontFamily: "sans-serif",

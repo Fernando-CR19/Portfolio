@@ -7,17 +7,17 @@ import ProjectsList from "../components/ProjectList";
 
 export default function HomeScreen() {
   const dados = [
-    { key: "Javascript" },
-    { key: "Typescript" },
-    { key: "Python" },
-    { key: "React e React Native" },
-    { key: "NestJs" },
-    { key: "PostgreSQL e PrismaORM" },
-    { key: "Docker" },
-    { key: "Postman" },
-    { key: "Prometheus e Grafana" },
-    { key: "Conhecimento em machine learning" },
-    { key: "Conhecimento com agentes de IA e MCP" },
+    { key: "Javascript;" },
+    { key: "Typescript;" },
+    { key: "Python;" },
+    { key: "React e React Native;" },
+    { key: "NestJs;" },
+    { key: "PostgreSQL e PrismaORM;" },
+    { key: "Docker;" },
+    { key: "Postman;" },
+    { key: "Prometheus e Grafana;" },
+    { key: "Conhecimento em machine learning;" },
+    { key: "Conhecimento com agentes de IA e MCP." },
   ];
 
   return (

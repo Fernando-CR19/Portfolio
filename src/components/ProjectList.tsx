@@ -7,7 +7,7 @@ export default function ProjectsList() {
       id: 1,
       title: "Sistema de Agendamento",
       description:
-        "Eu desenvolvi este aplicativo Android durante a faculdade como um protótipo para uma clínica, com o objetivo de simplificar o processo de agendamento. Ele reduz a burocracia dos sistemas tradicionais e oferece funcionalidades adicionais, como: agendamento de consultas e exames, acesso ao histórico médico, visualização de resultados de exames, escolha entre planos (básico, membro e premium) e uma área dedicada para receitas e prescrições médicas digitalizadas.",
+        "Desenvolvi este aplicativo Android durante a faculdade como um protótipo para uma clínica, com o objetivo de simplificar o processo de agendamento. Ele reduz a burocracia dos sistemas tradicionais e oferece funcionalidades adicionais, como: agendamento de consultas e exames, acesso ao histórico médico, visualização de resultados de exames, escolha entre planos (básico, membro e premium) e uma área dedicada para receitas e prescrições médicas digitalizadas.",
       image: require("../assets/saudeManiaApp.png"),
     },
     {
@@ -21,7 +21,7 @@ export default function ProjectsList() {
       id: 3,
       title: "AI Agent",
       description:
-        "Desenvolvi um agent de IA utilizando LangChain e o protocolo MCP, eles estão equipado com um conjunto de ferramentas para treinamento de modelos de machine learning e realização de previsões a partir de uma base de dados pré-definida. O agent avalia os modelos treinados, identifica aquele com melhor desempenho e o retorna para ser utilizado em uma análise posterior, com novos dados que serão enviados pelo usuário.",
+        "Desenvolvi um agent de IA utilizando LangChain e o protocolo MCP, ele está equipado com um conjunto de ferramentas para treinamento de modelos de machine learning e realização de previsões a partir de uma base de dados pré-definida. O agente avalia os modelos treinados, identifica aquele com melhor desempenho e o retorna para ser utilizado em uma análise posterior, com novos dados que serão enviados pelo usuário.",
       image: require("../assets/AIAgent.jpg"),
     },
     {

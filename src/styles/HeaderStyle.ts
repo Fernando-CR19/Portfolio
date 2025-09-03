@@ -4,6 +4,8 @@ export default StyleSheet.create({
   Header: {
     flexDirection: "row",
     alignItems: "center",
+    width: "90%",
+    margin: "auto",
     padding: 5,
   },
 
