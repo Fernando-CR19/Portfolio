@@ -6,7 +6,7 @@ export default function Header() {
   return (
     <SafeAreaView>
       <View style={styles.Header}>
-        <Ionicons name="ellipsis-horizontal-outline" style={styles.Icon} />
+        <Ionicons name="menu-outline" style={styles.Icon} />
         <Text style={styles.Name}>Olá, eu sou Fernando!</Text>
       </View>
     </SafeAreaView>

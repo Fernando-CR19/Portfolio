@@ -3,6 +3,7 @@ import { SafeAreaView, SafeAreaProvider } from "react-native-safe-area-context";
 import Header from "../components/HeaderHome";
 import Footer from "../components/FooterHome";
 import styles from "../styles/HomeScreen";
+import ProjectsList from "../components/ProjectList";
 
 export default function HomeScreen() {
   return (
@@ -48,7 +49,12 @@ export default function HomeScreen() {
                 tecnologias.
               </Text>
             </View>
-            <View style={styles.MyProjects}>Hello World!</View>
+            <View style={styles.MyProjects}>
+              <Text style={styles.MyProjectsTitle}>Meus Projetos</Text>
+              <View style={styles.MyProjectsCard}>
+                <ProjectsList />
+              </View>
+            </View>
           </View>
           <Footer />
         </ScrollView>

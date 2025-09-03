@@ -42,7 +42,14 @@ export default StyleSheet.create({
     marginBottom: 20,
   },
 
-  MyProjects: {
-    borderWidth: 2,
+  MyProjects: {},
+
+  MyProjectsTitle: {
+    fontFamily: "sans-serif",
+    fontSize: 20,
+    fontWeight: "bold",
+    marginBottom: 5,
   },
+
+  MyProjectsCard: {},
 });
