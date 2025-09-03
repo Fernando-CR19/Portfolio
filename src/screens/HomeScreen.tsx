@@ -77,6 +77,7 @@ export default function HomeScreen() {
               <Text style={styles.AbilitiesTitle}>Minhas Habilidades</Text>
               <FlatList
                 data={dados}
+                scrollEnabled={false}
                 renderItem={({ item }) => (
                   <Text style={styles.Abilities}>{item.key}</Text>
                 )}
