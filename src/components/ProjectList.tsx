@@ -25,7 +25,7 @@ export default function ProjectsList() {
       image: require("../assets/AIAgent.jpg"),
     },
     {
-      id: 3,
+      id: 4,
       title: "Bot de Relatório",
       description:
         "Desenvolvi um Bot para Telegram capaz de monitorar mensagens e, mediante o comando /report, gerar relatórios automatizados de logs do sistema. Essa solução auxilia no processo de auditoria, proporciona maior transparência operacional e facilita o acompanhamento em tempo real do comportamento do aplicativo onde for implementado.",
