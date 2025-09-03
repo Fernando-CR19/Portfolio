@@ -1,6 +1,6 @@
 # Portfólio Fernando Chaves
 
-Esse aplicativo tem como objetivo demostrar minhas habilidades como desenvolvedor, utilizando react native e expo.
+Este aplicativo apresenta meus projetos desenvolvidos durante a faculdade e trabalhos como freelancer, demonstrando minhas habilidades como desenvolvedor.
 
 ---
 
