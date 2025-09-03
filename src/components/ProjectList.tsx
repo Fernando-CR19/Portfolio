@@ -14,7 +14,7 @@ export default function ProjectsList() {
       id: 2,
       title: "Microserviço para envio de código de Autenticação",
       description:
-        "Desenvolvi um microserviço para geração e envio de códigos OTP (One-Time Password) de 6 dígitos, seguindo o padrão de mercado e com suporte a TTL (Time To Live) para expiração automática. O envio é realizado via WhatsApp, utilizando WebSocket para comunicação em tempo real. Esse microserviço é genérico e desacoplado, podendo ser facilmente integrado a diferentes aplicações, como no caso do meu app Saúde Mania.",
+        "Desenvolvi um microserviço para geração e envio de códigos OTP (One-Time Password) de 6 dígitos, seguindo o padrão de mercado e com suporte a TTL (Time To Live) para expiração automática. O envio é realizado via WhatsApp, utilizando WebSocket para comunicação em tempo real. Esse microserviço é flexível e reutilizável, podendo ser facilmente integrado a diferentes aplicações, como no caso do meu app Saúde Mania.",
       image: require("../assets/OTP.jpg"),
     },
     {

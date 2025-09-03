@@ -55,7 +55,7 @@ export default function HomeScreen() {
                 bem planejados. {"\n\n"}
                 Com o tempo, percebi que o que mais me interessava era o
                 backend, a parte que sustenta e organiza a aplicação. Cada
-                projeto e cada falha reforçaram esse caminho. {"\n\n"}
+                projeto, acertos e falhas reforçaram esse caminho. {"\n\n"}
                 Agora, em 2025, aplico tudo o que aprendi em projetos reais,
                 validando o que estudei e descobrindo o que ainda preciso
                 melhorar. {"\n\n"}
