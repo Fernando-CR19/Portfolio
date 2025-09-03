@@ -76,6 +76,7 @@ export default function Footer() {
             rules={{ required: "Digite uma mensagem" }}
             render={({ field: { value, onChange } }) => (
               <TextInput
+                textAlignVertical="top"
                 placeholder="Digite sua mensagem..."
                 multiline
                 style={styles.FormTextArea}
