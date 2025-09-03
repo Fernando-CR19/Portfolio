@@ -34,13 +34,18 @@ export default function ProjectsList() {
   ];
 
   return (
-    <ScrollView>
-      {projects.map((project) => (
+    <ScrollView
+      accessible={true}
+      accessibilityLabel="Lista de projetos desenvolvidos"
+    >
+      {projects.map((project, index) => (
         <ProjectCard
           key={project.id}
           title={project.title}
           description={project.description}
           image={project.image}
+          accessible={true}
+          accessibilityLabel={`Projeto ${index + 1}: ${project.title}`}
         />
       ))}
     </ScrollView>

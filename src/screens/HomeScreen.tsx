@@ -33,6 +33,10 @@ export default function HomeScreen() {
               <Image
                 source={require("../assets/profile.jpg")}
                 style={styles.Profile}
+                accessible={true}
+                accessibilityLabel={
+                  "Homem jovem, cabelo preto e ondulado, notebook no fundo junto com alguns livros"
+                }
               />
             </View>
             <View style={styles.AboutMe}>
