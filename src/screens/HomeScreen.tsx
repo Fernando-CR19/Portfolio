@@ -1,4 +1,4 @@
-import { Image, ScrollView, Text, View } from "react-native";
+import { FlatList, Image, ScrollView, Text, View } from "react-native";
 import { SafeAreaView, SafeAreaProvider } from "react-native-safe-area-context";
 import Header from "../components/HeaderHome";
 import Footer from "../components/FooterHome";
@@ -6,6 +6,20 @@ import styles from "../styles/HomeScreen";
 import ProjectsList from "../components/ProjectList";
 
 export default function HomeScreen() {
+  const dados = [
+    { key: "Javascript" },
+    { key: "Typescript" },
+    { key: "Python" },
+    { key: "React e React Native" },
+    { key: "NestJs" },
+    { key: "PostgreSQL e PrismaORM" },
+    { key: "Docker" },
+    { key: "Postman" },
+    { key: "Prometheus e Grafana" },
+    { key: "Conhecimento em machine learning" },
+    { key: "Conhecimento com agentes de IA e MCP" },
+  ];
+
   return (
     <SafeAreaProvider>
       <SafeAreaView style={{ flex: 1 }}>
@@ -54,6 +68,15 @@ export default function HomeScreen() {
               <View style={styles.MyProjectsCard}>
                 <ProjectsList />
               </View>
+            </View>
+            <View style={styles.MyAbilities}>
+              <Text style={styles.AbilitiesTitle}>Minhas Habilidades</Text>
+              <FlatList
+                data={dados}
+                renderItem={({ item }) => (
+                  <Text style={styles.Abilities}>{item.key}</Text>
+                )}
+              />
             </View>
           </View>
           <Footer />

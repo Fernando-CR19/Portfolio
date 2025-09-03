@@ -52,4 +52,18 @@ export default StyleSheet.create({
   },
 
   MyProjectsCard: {},
+
+  MyAbilities: {},
+
+  AbilitiesTitle: {
+    fontFamily: "sans-serif",
+    fontSize: 20,
+    fontWeight: "bold",
+    marginTop: 10,
+    marginBottom: 5,
+  },
+
+  Abilities: {
+    fontSize: 18,
+  },
 });
