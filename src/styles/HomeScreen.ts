@@ -67,18 +67,25 @@ export default StyleSheet.create({
   },
 
   MyAbilities: {
-    marginBottom: 20,
+    marginBottom: 30,
+    backgroundColor: "#1e293b",
+    padding: 20,
+    borderRadius: 12,
   },
 
   AbilitiesTitle: {
     fontFamily: "sans-serif",
-    fontSize: 20,
+    fontSize: 24,
     fontWeight: "bold",
-    marginTop: 10,
-    marginBottom: 5,
+    marginTop: 5,
+    marginBottom: 15,
+    color: "#10b981",
   },
 
   Abilities: {
     fontSize: 18,
+    color: "#cbd5e1",
+    marginVertical: 4,
+    paddingLeft: 10,
   },
 });
