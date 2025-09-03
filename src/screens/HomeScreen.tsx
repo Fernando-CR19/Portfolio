@@ -69,7 +69,7 @@ export default function HomeScreen() {
             </View>
             <View style={styles.MyProjects}>
               <Text style={styles.MyProjectsTitle}>Meus Projetos</Text>
-              <View style={styles.MyProjectsCard}>
+              <View>
                 <ProjectsList />
               </View>
             </View>

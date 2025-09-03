@@ -51,16 +51,20 @@ export default StyleSheet.create({
     textAlignVertical: "center",
   },
 
-  MyProjects: {},
+  MyProjects: {
+    marginBottom: 30,
+    backgroundColor: "#1e293b",
+    padding: 20,
+    borderRadius: 12,
+  },
 
   MyProjectsTitle: {
     fontFamily: "sans-serif",
     fontSize: 20,
     fontWeight: "bold",
-    marginBottom: 5,
+    marginBottom: 15,
+    color: "white",
   },
-
-  MyProjectsCard: {},
 
   MyAbilities: {
     marginBottom: 20,
