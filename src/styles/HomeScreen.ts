@@ -34,6 +34,10 @@ export default StyleSheet.create({
     backgroundColor: "#1e293b",
     padding: 20,
     borderRadius: 12,
+    borderTopWidth: 4,
+    borderTopColor: "#06b6d4",
+    borderBottomWidth: 4,
+    borderBottomColor: "#06b6d4",
   },
 
   AMTitle: {
@@ -56,6 +60,10 @@ export default StyleSheet.create({
     backgroundColor: "#1e293b",
     padding: 20,
     borderRadius: 12,
+    borderTopWidth: 4,
+    borderTopColor: "#06b6d4",
+    borderBottomWidth: 4,
+    borderBottomColor: "#06b6d4",
   },
 
   MyProjectsTitle: {
@@ -71,6 +79,10 @@ export default StyleSheet.create({
     backgroundColor: "#1e293b",
     padding: 20,
     borderRadius: 12,
+    borderTopWidth: 4,
+    borderTopColor: "#06b6d4",
+    borderBottomWidth: 4,
+    borderBottomColor: "#06b6d4",
   },
 
   AbilitiesTitle: {

@@ -54,6 +54,7 @@ export default function Footer() {
             render={({ field: { value, onChange } }) => (
               <TextInput
                 placeholder="Digite seu email para contato"
+                placeholderTextColor={"#cbd5e1"}
                 style={styles.FormInput}
                 underlineColorAndroid="transparent"
                 value={value || ""}
@@ -80,6 +81,7 @@ export default function Footer() {
                 placeholder="Digite sua mensagem..."
                 multiline
                 style={styles.FormTextArea}
+                placeholderTextColor={"#64748b"}
                 underlineColorAndroid="transparent"
                 value={value || ""}
                 onChangeText={onChange}
