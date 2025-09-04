@@ -37,7 +37,7 @@ export default function Footer() {
 
     setTimeout(() => {
       setShowSuccessMessage(false);
-    }, 1000);
+    }, 2000);
   };
 
   return (
@@ -64,9 +64,7 @@ export default function Footer() {
           />
         </View>
         {errors.email?.message && (
-          <Text style={{ color: "red", marginTop: 4 }}>
-            {errors.email.message as string}
-          </Text>
+          <Text style={styles.errorText}>{errors.email.message as string}</Text>
         )}
 
         <Text style={styles.FormLabel}>Mande uma mensagem:</Text>
@@ -89,16 +87,12 @@ export default function Footer() {
             )}
           />
         </View>
-        {errors.mensagem?.message && (
-          <Text style={{ color: "red", marginTop: 4 }}>
-            {errors.mensagem.message as string}
-          </Text>
+        {errors.email?.message && (
+          <Text style={styles.errorText}>{errors.email.message as string}</Text>
         )}
 
         {showSuccessMessage && (
-          <Text style={{ color: "green", marginTop: 4, fontSize: 14 }}>
-            Mensagem enviada com sucesso!
-          </Text>
+          <Text style={styles.successText}>Mensagem enviada com sucesso!</Text>
         )}
 
         <TouchableOpacity

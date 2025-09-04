@@ -81,4 +81,23 @@ export default StyleSheet.create({
     fontWeight: "600",
     color: "#f8fafc",
   },
+
+  errorText: {
+    color: "#ef4444",
+    fontSize: 14,
+    marginTop: 5,
+    marginLeft: 5,
+    fontWeight: "500",
+  },
+
+  successText: {
+    color: "#10b981",
+    fontSize: 16,
+    marginTop: 15,
+    textAlign: "center",
+    fontWeight: "600",
+    backgroundColor: "#0f172a",
+    padding: 12,
+    borderRadius: 8,
+  },
 });
