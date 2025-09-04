@@ -13,7 +13,7 @@ Este aplicativo apresenta meus projetos desenvolvidos durante a faculdade e trab
 
    ```
 
-2. **Abra o projeto em seu editor de código preferido (ex: VS Code).**
+2. **Abra o projeto em um editor de código (ex: VS Code).**
 
 3. **Instale as dependências do projeto**
 
