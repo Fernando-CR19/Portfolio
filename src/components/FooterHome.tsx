@@ -9,10 +9,12 @@ import {
 import { useState } from "react";
 import { Ionicons } from "@expo/vector-icons";
 import { Controller, useForm } from "react-hook-form";
+import { useSendMessage } from "../hooks/useSendMessage";
 import styles from "../styles/FooterStyle";
 
 export default function Footer() {
   const [showSuccessMessage, setShowSuccessMessage] = useState(false);
+  const { error, handleSendMessage } = useSendMessage();
 
   const {
     control,
@@ -21,50 +23,66 @@ export default function Footer() {
     formState: { errors },
   } = useForm();
 
-  const onSubmit = (data: any) => {
-    if (!data.email?.trim() || !data.mensagem?.trim()) {
+  const onSubmit = async (data: any) => {
+    if (!data.phone?.trim() || !data.mensagem?.trim()) {
       Alert.alert("Erro", "Preencha os campos para enviar uma mensagem");
       return;
     }
-    Alert.alert("Sucesso", "Mensagem enviada com sucesso");
 
-    setShowSuccessMessage(true);
+    try {
+      await handleSendMessage(data.phone, data.mensagem);
 
-    reset({
-      email: "",
-      mensagem: "",
-    });
+      Alert.alert("Sucesso", "Mensagem enviada com sucesso");
 
-    setTimeout(() => {
-      setShowSuccessMessage(false);
-    }, 2000);
+      setShowSuccessMessage(true);
+
+      reset({
+        phone: "",
+        mensagem: "",
+      });
+
+      setTimeout(() => {
+        setShowSuccessMessage(false);
+      }, 2000);
+    } catch (err) {
+      Alert.alert("Erro", error || "Não foi possível enviar a mensagem");
+    }
   };
 
   return (
     <SafeAreaView>
       <View style={styles.FormContainer}>
         <Text style={styles.FormTitle}>Entre em contato</Text>
-        <Text style={styles.FormLabel}>Email:</Text>
+        <Text style={styles.FormLabel}>Celular:</Text>
         <View style={styles.Form}>
-          <Ionicons name="mail-outline" style={styles.FormIcon} />
+          <Ionicons name="call-outline" style={styles.FormIcon} />
           <Controller
             control={control}
-            name="email"
-            rules={{ required: "Digite um email válido" }}
+            name="phone"
+            rules={{
+              required: "Digite um celular válido",
+              pattern: {
+                value: /^\d{10,13}$/,
+                message: "Formato inválido. Use DDD + número",
+              },
+            }}
             render={({ field: { value, onChange } }) => (
               <TextInput
-                placeholder="Digite seu email para contato"
+                placeholder="Digite seu celular"
                 placeholderTextColor={"#cbd5e1"}
                 style={styles.FormInput}
                 underlineColorAndroid="transparent"
                 value={value || ""}
                 onChangeText={onChange}
+                keyboardType="phone-pad"
               />
             )}
           />
         </View>
         {errors.email?.message && (
-          <Text style={styles.errorText}>{errors.email.message as string}</Text>
+          <Text style={styles.errorText}>
+            {errors.phone!.message as string}
+          </Text>
         )}
 
         <Text style={styles.FormLabel}>Mande uma mensagem:</Text>
