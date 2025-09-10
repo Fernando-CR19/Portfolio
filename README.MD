@@ -18,14 +18,14 @@ Este aplicativo apresenta meus projetos desenvolvidos durante a faculdade e trab
 3. **Instale as dependências do projeto**
 
    ```bash
-   npm install
+   yarn install
 
    ```
 
 4. **Inicie o projeto com expo**
 
    ```bash
-   npx expo start
+   yarn start
 
    ```
 

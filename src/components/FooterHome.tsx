@@ -10,6 +10,7 @@ import { useState } from "react";
 import { Ionicons } from "@expo/vector-icons";
 import { Controller, useForm } from "react-hook-form";
 import { useSendMessage } from "../hooks/useSendMessage";
+import { maskPhone } from "../utils/validations";
 import styles from "../styles/FooterStyle";
 
 export default function Footer() {
@@ -24,26 +25,16 @@ export default function Footer() {
   } = useForm();
 
   const onSubmit = async (data: any) => {
-    if (!data.phone?.trim() || !data.mensagem?.trim()) {
-      Alert.alert("Erro", "Preencha os campos para enviar uma mensagem");
-      return;
-    }
-
     try {
-      await handleSendMessage(data.phone, data.mensagem);
+      const phoneNumbersOnly = data.phone.replace(/\D/g, "");
+      await handleSendMessage(phoneNumbersOnly, data.mensagem);
 
       Alert.alert("Sucesso", "Mensagem enviada com sucesso");
 
       setShowSuccessMessage(true);
+      reset({ phone: "", mensagem: "" });
 
-      reset({
-        phone: "",
-        mensagem: "",
-      });
-
-      setTimeout(() => {
-        setShowSuccessMessage(false);
-      }, 2000);
+      setTimeout(() => setShowSuccessMessage(false), 3000);
     } catch (err) {
       Alert.alert("Erro", error || "Não foi possível enviar a mensagem");
     }
@@ -60,10 +51,13 @@ export default function Footer() {
             control={control}
             name="phone"
             rules={{
-              required: "Digite um celular válido",
-              pattern: {
-                value: /^\d{10,13}$/,
-                message: "Formato inválido. Use DDD + número",
+              required: "Digite um celular",
+              validate: (value) => {
+                const numbersOnly = value.replace(/\D/g, "");
+                return (
+                  numbersOnly.length === 11 ||
+                  "Formato inválido. Use DDD + número"
+                );
               },
             }}
             render={({ field: { value, onChange } }) => (
@@ -72,14 +66,15 @@ export default function Footer() {
                 placeholderTextColor={"#cbd5e1"}
                 style={styles.FormInput}
                 underlineColorAndroid="transparent"
-                value={value || ""}
+                value={maskPhone(value || "")}
                 onChangeText={onChange}
                 keyboardType="phone-pad"
+                maxLength={15}
               />
             )}
           />
         </View>
-        {errors.email?.message && (
+        {errors.phone?.message && (
           <Text style={styles.errorText}>
             {errors.phone!.message as string}
           </Text>
@@ -105,8 +100,10 @@ export default function Footer() {
             )}
           />
         </View>
-        {errors.email?.message && (
-          <Text style={styles.errorText}>{errors.email.message as string}</Text>
+        {errors.mensagem?.message && (
+          <Text style={styles.errorText}>
+            {errors.mensagem.message as string}
+          </Text>
         )}
 
         {showSuccessMessage && (
